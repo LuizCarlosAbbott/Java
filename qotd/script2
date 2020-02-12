@@ -1,0 +1,9 @@
+class Person {
+ String name
+ int age
+}
+
+def person = new Person(name: "Peter Ledbrook", age: 38)
+println person.getName()
+person.setAge(20)
+println person.getAge()
