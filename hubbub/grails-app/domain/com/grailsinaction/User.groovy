@@ -11,7 +11,9 @@ class User {
         password size: 6..8, blank: false, validator: { passwd, user ->
             passwd != user.loginId
         }
-        homepage nullable: true
+        homepage()
+        tags()
+        posts()
         profile nullable: true
     }
     static mapping = {
